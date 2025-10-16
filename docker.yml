@@ -19,7 +19,6 @@
      ansible.builtin.get_url:
         url: https://download.docker.com/linux/ubuntu/gpg
         dest: /usr/share/keyrings/docker.gpg
-       # state: present
    - name: add docker repository to apt
      ansible.builtin.apt_repository:
        repo: deb [arch=amd64 signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu questing stable
