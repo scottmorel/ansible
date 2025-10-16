@@ -1,7 +1,7 @@
 ---
 - name: Install Docker
   hosts: localhost
-  remote_user: scott
+  remote_user: #username
   become: true
   tasks:
    - name: Install dependencies
